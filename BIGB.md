@@ -8,6 +8,7 @@ The size of the entire header is 400 bytes
 `Fun Fact: I-Ninja doesn't even bother with the first 16 bytes. The first 16 bytes can literally all be 'f', and the game will run just fine.`
 
 | Offset | Size | Default Value? | Description |
+| ------ | ---- | -------------- | ----------- |
 | 0x00 | 0x04 | 'BIGB' | Magic Value |
 | 0x04 | 0x04 | 384 | Location to the start of the compressed data chunk (400 - 16) |
 | 0x08 | 0x04 | 118 (on PC) | This is the WAD version of the BIGB file, as noted in 10-00.LCS.LOG |
@@ -33,6 +34,7 @@ I will leave two tables, one with all the values I've seen so far, and one with 
 
 Known:
 | Value | Locations Count | Description |
+| ----- | --------------- | ----------- |
 | 0x80000001 | 2 | Texture resource |
 | 0x80000023 | 3 | Model data without Texture Coordinates |
 | 0x80000024 | 3 | Model data with Texture Coordinates |

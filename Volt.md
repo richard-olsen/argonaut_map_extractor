@@ -19,6 +19,7 @@ The file is comprised of 4 sections
 
 ## Header
 | Offset | Size | Default Value? | Description |
+| ------ | ---- | -------------- | ----------- |
 | 0x00 | 0x04 | 'VOLT' | A magic value |
 | 0x04 | 0x04 | 2 | An unknown value, but it's always 2|
 | 0x08 | 0x04 | | How many files exist inside this archive |
@@ -29,6 +30,7 @@ The Directory Table is an array of Directory Entries. This array holds the same 
 
 ### Directory Entry
 | Offset | Size | Default Value? | Description |
+| ------ | ---- | -------------- | ----------- |
 | 0x00 | 0x04 | | A CRC encoding of the file name |
 | 0x04 | 0x04 | 1 | An unknown value, but it's always 1 (referred to fileTypeID in the extractor/packer) |
 | 0x08 | 0x04 | | An accumulation of the file entry size |
@@ -38,6 +40,7 @@ The File Table is a little odd. The File Table is constructed of File Entries, t
 
 ### File Entry
 | Offset | Size | Default Value? | Description |
+| ------ | ---- | -------------- | ----------- |
 | 0x00 | 0x04 | | The file's data location in the archive |
 | 0x04 | 0x04 | 0 | Unknown, possibly a 64 bit extension? |
 | 0x08 | 0x04 | | The file's size |
