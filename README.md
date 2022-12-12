@@ -7,6 +7,8 @@ This is an extractor specifically tailored for I-Ninja (specifically the PC vers
 
 It would be a dream come true if I can find a way to repack the LCM/LCS files and fit them with custom scripts, but I am no where near being able to repack these files, nor can I figure out the Argonaut Strat Language at this time.
 
+To all who may be interested in I-Ninja, or any other game by Argonaut Games, you may use this code how ever you like
+
 ## Setup
 Currently, the tools only work with Windows. The easiest way to set up is to
 * Clone the Repo
@@ -51,4 +53,7 @@ After extracting the contents inside of `general.vol`, go ahead and make the edi
 * LCM/LCS Documentation (BIGB.md)
 * Volt Documentation (Volt.md)
 
+## Credit
+* [timepp](https://gist.github.com/timepp) for the crc32 code
+* The Bionical the Game modding community for a good chunk of the Volt archive file information
 
